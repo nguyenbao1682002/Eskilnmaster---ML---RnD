@@ -1,7 +1,7 @@
 # 🏭ESKilnMaster---BinhPhuoc---ML
 ## 🔥Connect to EC2
 Ask Team Lead or Manager to get the private key file **.pem** and **.ppk** file.  
-**Owner: HoanVoESTEC - Võ Lý Hoang Hoan** 
+**Owner: HoanVoESTEC - Võ Lý Hoang Hoan, BaoTranESTEC - Trần Nguyên Bảo** 
 ### Method 1: Connect with VSCode
 ```bash
 ssh -i "${KEY_SSH}.pem" ubuntu@ec2-${IP_SSH}.${REGION}.compute.amazonaws.com
