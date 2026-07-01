@@ -1,0 +1,8 @@
+INFO:     Started server process [7958]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8082 (Press CTRL+C to quit)
+INFO:     18.143.191.250:35684 - "POST /classify_status_predict_trend HTTP/1.1" 200 OK
+INFO:     18.143.191.250:35684 - "POST /find_issues HTTP/1.1" 200 OK
+INFO:     13.212.137.135:45032 - "POST /classify_status_predict_trend HTTP/1.1" 200 OK
+INFO:     13.212.137.135:45032 - "POST /find_issues HTTP/1.1" 200 OK

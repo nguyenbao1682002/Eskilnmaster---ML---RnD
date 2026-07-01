@@ -1,0 +1,159 @@
+[
+    {
+        "index": 1,
+        "incident": "Đo áp Kilnhood sai",
+        "description" : 
+        [
+            {        
+            "source": "Quạt 4S1 täng/giảm 50A trong 30s",
+            "tag value": "4S1FN01DRV01_M2001_EI",
+            "device name": "Fan_4S1",
+            "rule": "±50A trong vòng 30s"
+            },
+            {
+            "source": "Áp Kilnhood không thay đổi",
+            "tag value": "4K1KP01KHE01_B5001",
+            "device name": "Kilnhood_Pressure",
+            "rule": "không đổi hoặc thay đổi ít ±0.1mbar"
+            },
+            {
+            "source": "Nhiệt khí thải không thay đổi nhiều hoặc xu hướng giảm",
+            "tag value": "4S1GP01JST00_T8104",
+            "device name": "Thermal_Exhaust",
+            "rule": "không đổi hoặc có xu hướng giảm nhiệt độ"
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "incident": "Đo áp sau IDfan sai",
+        "description":
+        [
+            {      
+            "source": "Độ mở/đóng van quạt 4E1 tăng 10% trong 30s",
+            "tag value": "4E1FN01TVJ01_MV",
+            "device name": "Fan_4E1_Valve_Open_Close_Degree",
+            "rule": "độ đóng/mở van ±10% quạtt 4E1"
+            },
+            {
+            "source": "Áp 4E1GP1JST01 thay đổi không đáng kể",
+            "tag value": "4E1GP01JST00_B5002",
+            "device name": "P_4E1GP1JST01_Pressure",
+            "rule": "không đổi hoặc thay đổi ít ±0.1mbar"
+            }
+        ]
+    },
+    {
+        "index": 3,
+        "incident": "Cân KF sai",
+        "description": 
+        [
+            {
+            "source": "Actual kilnfeed không đổi",
+            "tag value": "4C1CD01XCC01 Feedrate",
+            "device name": "U_4C1CD01XCC01_Feedrate",
+            "rule": "Mean value 15 phút không đổi"
+            },
+            {
+            "source": "Độ mở van giảm/tăng 5% trong 30s",
+            "tag value": "4C1DD02DDJ01_M5501_MV",
+            "device name": "Valve_Open_Degree",
+            "rule": "±5% trong vòng 30s"
+            },
+            {
+            "source": "Dòng gàu tải giảm/tăng 10A trong 30s",
+            "tag value": "4C1BE02DRV01_02_IE",
+            "device name": "U_4C1BE02DRV01_02_IE",
+            "rule": "±10A trong 30s"
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "incident": "Cân than PC sai",
+        "description":
+        [
+            {
+            "source": "Actual feedrate của cân than không đổi",
+            "tag value": "CW1DC01XCC01_Feedrate",
+            "device name": "Actual_Feed_Rate_PC",
+            "rule": "không đổi hoặc thay đổi ít ±0.1t/h"
+            },
+            {
+            "source": "Áp blower thổi than giảm/tăng 30mbar trong 30s",
+            "tag value": "CW1RB01JST00_B5001",
+            "device name": "Coal_Blower_Pressure_01",
+            "rule": "±30mbar trong vòng 30s"
+            }
+        ]
+    },
+    {
+        "index": 5,
+        "incident": "Cân than SZ sai",
+        "description":
+        [
+            {   
+            "source": "Actual feedrate của cân than không đổi",
+            "tag value": "CW1DC02XCC01_Feedrate",
+            "device name": "Actual_Feed_Rate_SZ",
+            "rule": "không đổi hoặc thay đổi ít ±0.1t/h"
+            },
+            {
+            "source": "Áp blower thổi than giảm/tăng 30mbar trong 30s",
+            "tag value": "CW1RB02JST00_B5001",
+            "device name": "Coal_Blower_Pressure_02",
+            "rule": "±30mbar trong vòng 30s"
+            }
+        ]
+    },
+    {
+        "index": 6,
+        "incident": "Chất lượng vải xấu",
+        "description":
+        [
+            {
+            "source": "Cân vải không đổi",
+            "tag value": "L72BW01_W01",
+            "device name": "Fabric_Scale",
+            "rule": "mean value 15 phút không đổi"
+            },
+            {
+            "source": "Nhiệt C1 giảm",
+            "tag value": "4G1PS01GPJ02_T8201",
+            "device name": "Temperature_C1",
+            "rule": "–10 —> –15oC trong vòng 5 phút"
+            },
+            {
+            "source": "Nhiệt C2 tăng",
+            "tag value": "4G1PS02PGP02_T8201",
+            "device name": "Temperature_C2",
+            "rule": "＋8 —> 10oC trong vòng 5 phút ( sau C1)"
+            },
+            {
+            "source": "Nhiệt C3 tăng",
+            "tag value": "4G1PS03PGP02_T8201",
+            "device name": "Temperature_C3",
+            "rule": "＋8  —> 10oC trong vòng 7 phút ( sau C1)"
+            }
+        ]
+    },
+    {
+        "index": 7,
+        "incident": "Lò ra trám",
+        "description":
+        [
+            {
+            "source": "Tải lò tăng/giảm đột ngột 30-50A trong vòng 30s",
+            "tag value": "4K1KP01DRV01_M2001_EI",
+            "device name": "KilnDriAmp",
+            "rule": "±30A trong 30s"
+            },
+            {
+            "source": "Áp thủy lực ghi tăng 10-15bar trong vòng 30s",
+            "tag value": "Grate_Hyd_Pressure",
+            "device name": "Hydraulic_Pressure",
+            "rule": "＋10bar trong 30s"
+            }
+        ]
+    }
+  ]
